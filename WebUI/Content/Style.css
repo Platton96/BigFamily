@@ -1,0 +1,25 @@
+﻿
+img[alt="Фото по умалчение"]
+{
+    width: 100%;
+    height: 100%
+}
+.sign
+{
+    float: right; /* Выравнивание по правому краю */
+    border: 1px solid #333; /* Параметры рамки */
+    padding: 7px; /* Поля внутри блока */
+    margin: 10px 0 5px 5px; /* Отступы вокруг */
+    background: #f0f0f0; /* Цвет фона */ 
+   }
+   .sign figcaption {
+    margin: 0 auto 5px; /* Отступы вокруг абзаца */
+}
+#avatarName
+{
+    text-align: center;
+}
+.sign-out
+{
+    align-self: center;
+}

@@ -1,0 +1,15 @@
+C:\Users\Сергей\Desktop\подготовка\web\Учу mvs\BigFamily\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
+C:\Users\Сергей\Desktop\подготовка\web\Учу mvs\BigFamily\UnitTests\bin\Debug\UnitTests.dll.config
+C:\Users\Сергей\Desktop\подготовка\web\Учу mvs\BigFamily\UnitTests\bin\Debug\UnitTests.dll
+C:\Users\Сергей\Desktop\подготовка\web\Учу mvs\BigFamily\UnitTests\bin\Debug\UnitTests.pdb
+C:\Users\Сергей\Desktop\подготовка\web\Учу mvs\BigFamily\UnitTests\bin\Debug\Domain.dll
+C:\Users\Сергей\Desktop\подготовка\web\Учу mvs\BigFamily\UnitTests\bin\Debug\Moq.dll
+C:\Users\Сергей\Desktop\подготовка\web\Учу mvs\BigFamily\UnitTests\bin\Debug\Ninject.dll
+C:\Users\Сергей\Desktop\подготовка\web\Учу mvs\BigFamily\UnitTests\bin\Debug\Domain.pdb
+C:\Users\Сергей\Desktop\подготовка\web\Учу mvs\BigFamily\UnitTests\bin\Debug\Moq.pdb
+C:\Users\Сергей\Desktop\подготовка\web\Учу mvs\BigFamily\UnitTests\bin\Debug\Moq.xml
+C:\Users\Сергей\Desktop\подготовка\web\Учу mvs\BigFamily\UnitTests\bin\Debug\Ninject.xml
+C:\Users\Сергей\Desktop\подготовка\web\Учу mvs\BigFamily\UnitTests\obj\Debug\UnitTests.dll
+C:\Users\Сергей\Desktop\подготовка\web\Учу mvs\BigFamily\UnitTests\obj\Debug\UnitTests.pdb
+C:\Users\Сергей\Desktop\подготовка\web\Учу mvs\BigFamily\UnitTests\bin\Debug\EntityFramework.dll
+C:\Users\Сергей\Desktop\подготовка\web\Учу mvs\BigFamily\UnitTests\bin\Debug\EntityFramework.xml

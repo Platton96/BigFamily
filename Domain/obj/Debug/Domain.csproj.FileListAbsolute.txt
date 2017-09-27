@@ -1,0 +1,13 @@
+C:\Users\Сергей\Desktop\подготовка\web\Учу mvs\BigFamily\Domain\bin\Debug\Domain.dll
+C:\Users\Сергей\Desktop\подготовка\web\Учу mvs\BigFamily\Domain\bin\Debug\Domain.pdb
+C:\Users\Сергей\Desktop\подготовка\web\Учу mvs\BigFamily\Domain\obj\Debug\Domain.dll
+C:\Users\Сергей\Desktop\подготовка\web\Учу mvs\BigFamily\Domain\obj\Debug\Domain.pdb
+C:\Users\Сергей\Desktop\подготовка\web\Учу mvs\BigFamily\Domain\bin\Debug\Domain.dll.config
+C:\Users\Сергей\Desktop\подготовка\web\Учу mvs\BigFamily\Domain\bin\Debug\EntityFramework.dll
+C:\Users\Сергей\Desktop\подготовка\web\Учу mvs\BigFamily\Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Сергей\Desktop\подготовка\web\Учу mvs\BigFamily\Domain\bin\Debug\EntityFramework.xml
+C:\Users\Сергей\Desktop\подготовка\web\Учу mvs\BigFamily\Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Сергей\Desktop\подготовка\web\Учу mvs\BigFamily\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
+C:\Users\Сергей\Desktop\подготовка\web\Учу mvs\BigFamily\Domain\obj\Debug\Domain.Migrations.Initial.resources
+C:\Users\Сергей\Desktop\подготовка\web\Учу mvs\BigFamily\Domain\obj\Debug\Domain.csproj.GenerateResource.Cache
+C:\Users\Сергей\Desktop\подготовка\web\Учу mvs\BigFamily\Domain\obj\Debug\Domain.Migrations.Addburhday.resources

@@ -1,0 +1,65 @@
+﻿@model Domain.Entities.RegistrationModel
+
+@{
+    ViewBag.Title = "Registration";
+    Layout = "~/Views/Shared/_Nav.cshtml";
+}
+<center><h2>Регистрация</h2></center>
+<div class="form-horizontal">
+    @using (Html.BeginForm("Registration", "User",
+    FormMethod.Post, new { enctype = "multipart/form-data" })) 
+    {
+         @Html.ValidationSummary()
+          @Html.EditorFor(x=>x.UserID)
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-10">
+                   @Html.TextBoxFor(x => x.Email, new {@class="form-control" })
+            </div>
+         </div>
+        <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">Пароль</label>
+            <div class="col-sm-10">
+                   @Html.PasswordFor(x => x.Password, new {@class="form-control" })
+            </div>
+         </div>
+         <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">Потвердмите пароль</label>
+            <div class="col-sm-10">
+                   @Html.PasswordFor(x=>x.ConfirmPassword, new {@class="form-control" })
+            </div>
+         </div>
+         <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">Имя</label>
+            <div class="col-sm-10">
+                   @Html.TextBoxFor(x => x.Name, new {@class="form-control" })
+            </div>
+         </div>
+         <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">Фамилия</label>
+            <div class="col-sm-10">
+                   @Html.TextBoxFor(x => x.Surname, new {@class="form-control" })
+            </div>
+         </div>
+         <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">Номер телефона</label>
+            <div class="col-sm-10">
+                   @Html.TextBoxFor(x => x.NumberPhone, new { @class = "form-control" })
+            </div>
+         </div>
+        <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">Дата рождения</label>
+            <div class="col-sm-10">
+                   @Html.EditorFor(x => x.Burthday, new { @class = "form-control" })
+            </div>
+         </div>
+         <div class="form-group">
+            <label  class="col-sm-2 control-label">Аватарка</label>
+             <div class="col-sm-10">
+                 <input type="file" name="Image" />
+            </div>
+         </div>
+    <input type="submit" value="Save" />
+
+    }
+</div>

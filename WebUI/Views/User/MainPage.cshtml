@@ -1,0 +1,35 @@
+﻿@model Domain.Entities.User
+
+@{
+    ViewBag.Title = "MainPage";
+    Layout = "~/Views/Shared/_Nav.cshtml";
+}
+<div class="col-md-3 col-lg-3 col-sm-3">
+    <figure class="sign">
+        <p>
+            @if (Model.ImageData != null)
+{
+    <img class="img-responsive" src="@Url.Action("GetImage", "User", new { Model.UserID})" />
+}
+else
+{
+                <img src="~/Img/sampleuser@gmail.com.png" alt="Фото по умалчение"/>
+            }
+        </p>
+        <figcaption id="avatarName">@Model.Name  @Model.Surname</figcaption>
+    </figure>
+    <div class="menu">
+        <div class="form-group">
+            <button class="btn btn-success btn-block" type="button"> Добавить фото </button>
+            <button class="btn btn-success btn-block" type="button"> Альбомы </button>
+            <button class="btn btn-success btn-block" type="button"> Мои друзья </button>
+            <button class="btn btn-success btn-block" type="button"> Настройки </button>
+            <button class="btn btn-success btn-block" type="button"><i class="fa fa-sign-out"></i> Выйти </button>
+        </div>
+    </div>
+</div>  
+<div class="col-md-9 col-lg-9 col-sm-9">
+    <h2>MainPage</h2>
+    @Model.UserID
+    @Html.DisplayForModel()
+</div>
