@@ -54,6 +54,7 @@
     <Compile Include="Abstract\IUserRepository.cs" />
     <Compile Include="Concrete\EFDbContext.cs" />
     <Compile Include="Concrete\EFProductRepository.cs" />
+    <Compile Include="Entities\Photo.cs" />
     <Compile Include="Entities\RegistrationModel.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Migrations\201709191106566_Initial.cs" />
