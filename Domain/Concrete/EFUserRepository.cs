@@ -8,7 +8,7 @@ using Domain.Entities;
 
 namespace Domain.Concrete
 {
-    public class EFProductRepository : IUserRepository
+    public class EFUserRepository : IUserRepository
     {
         private EFDbContext context = new EFDbContext();
         public IQueryable<User> Users

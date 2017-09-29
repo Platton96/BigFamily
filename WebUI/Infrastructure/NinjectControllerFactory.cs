@@ -41,7 +41,9 @@ namespace WebUI.Infastructure
          }.AsQueryable());
 
              ninjectKernel.Bind<IUserRepository>().ToConstant(mock.Object);*/
-            ninjectKernel.Bind<IUserRepository>().To<EFProductRepository>();
+            ninjectKernel.Bind<IUserRepository>().To<EFUserRepository>();
+            ninjectKernel.Bind<IPhotoRepository>().To<EFPhotoRepository>();
+           
         }
     }
 }

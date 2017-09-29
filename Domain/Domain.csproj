@@ -51,9 +51,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IPhotoRepository.cs" />
     <Compile Include="Abstract\IUserRepository.cs" />
     <Compile Include="Concrete\EFDbContext.cs" />
-    <Compile Include="Concrete\EFProductRepository.cs" />
+    <Compile Include="Concrete\EFPhotoRepository.cs" />
+    <Compile Include="Concrete\EFUserRepository.cs" />
     <Compile Include="Entities\Photo.cs" />
     <Compile Include="Entities\RegistrationModel.cs" />
     <Compile Include="Entities\User.cs" />

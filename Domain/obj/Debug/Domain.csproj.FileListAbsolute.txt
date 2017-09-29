@@ -11,3 +11,16 @@ C:\Users\Сергей\Desktop\подготовка\web\Учу mvs\BigFamily\Doma
 C:\Users\Сергей\Desktop\подготовка\web\Учу mvs\BigFamily\Domain\obj\Debug\Domain.Migrations.Initial.resources
 C:\Users\Сергей\Desktop\подготовка\web\Учу mvs\BigFamily\Domain\obj\Debug\Domain.csproj.GenerateResource.Cache
 C:\Users\Сергей\Desktop\подготовка\web\Учу mvs\BigFamily\Domain\obj\Debug\Domain.Migrations.Addburhday.resources
+C:\Users\Сергей\Documents\GitHub\BigFamily\Domain\bin\Debug\Domain.dll.config
+C:\Users\Сергей\Documents\GitHub\BigFamily\Domain\bin\Debug\Domain.dll
+C:\Users\Сергей\Documents\GitHub\BigFamily\Domain\bin\Debug\Domain.pdb
+C:\Users\Сергей\Documents\GitHub\BigFamily\Domain\bin\Debug\EntityFramework.dll
+C:\Users\Сергей\Documents\GitHub\BigFamily\Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Сергей\Documents\GitHub\BigFamily\Domain\bin\Debug\EntityFramework.xml
+C:\Users\Сергей\Documents\GitHub\BigFamily\Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Сергей\Documents\GitHub\BigFamily\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
+C:\Users\Сергей\Documents\GitHub\BigFamily\Domain\obj\Debug\Domain.Migrations.Initial.resources
+C:\Users\Сергей\Documents\GitHub\BigFamily\Domain\obj\Debug\Domain.Migrations.Addburhday.resources
+C:\Users\Сергей\Documents\GitHub\BigFamily\Domain\obj\Debug\Domain.csproj.GenerateResource.Cache
+C:\Users\Сергей\Documents\GitHub\BigFamily\Domain\obj\Debug\Domain.dll
+C:\Users\Сергей\Documents\GitHub\BigFamily\Domain\obj\Debug\Domain.pdb

@@ -35,6 +35,7 @@ namespace Domain.Entities
         public byte[] ImageData { get; set; }
         [HiddenInput(DisplayValue = false)]
         public string ImageMimeType { get; set; }
+        public ICollection<Photo> Photos { get; set; }
 
     }
 }
