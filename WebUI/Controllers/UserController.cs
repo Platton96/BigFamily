@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using Domain.Abstract;
 using Domain.Entities;
+using WebUI.Models;
 
 namespace WebUI.Controllers
 {

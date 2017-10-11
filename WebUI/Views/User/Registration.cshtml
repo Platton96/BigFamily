@@ -1,16 +1,17 @@
-﻿@model Domain.Entities.RegistrationModel
+﻿@model WebUI.Models.RegistrationModel
 
 @{
     ViewBag.Title = "Registration";
     Layout = "~/Views/Shared/_Nav.cshtml";
 }
+
 <center><h2>Регистрация</h2></center>
 <div class="form-horizontal">
     @using (Html.BeginForm("Registration", "User",
     FormMethod.Post, new { enctype = "multipart/form-data" })) 
     {
          @Html.ValidationSummary()
-          @Html.EditorFor(x=>x.UserID)
+          @Html.EditorFor(x => x.UserID, new { @class = "form-control" })
           <div class="form-group">
             <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
             <div class="col-sm-10">

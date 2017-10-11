@@ -1,0 +1,11 @@
+﻿@model WebUI.Models.PhotoModelView
+
+@{
+    ViewBag.Title = "Albums";
+}
+
+<h2>Albums</h2>
+@foreach(var ph in Model.Photos)
+{
+    @ph.Name;
+}

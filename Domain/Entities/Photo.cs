@@ -23,7 +23,7 @@ namespace Domain.Entities
         public byte[] ImageData { get; set; }
         [HiddenInput(DisplayValue = false)]
         public string ImageMimeType { get; set; }
-        public string UserID { get; set; }
+        public int UserID { get; set; }
 
     }
 }
