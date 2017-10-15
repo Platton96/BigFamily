@@ -10,5 +10,7 @@ namespace Domain.Abstract
     public interface IPhotoRepository
     {
         IQueryable<Photo> Photos { get; }
+        void SavePhoto(Photo phot);
+        Photo DeletePhoto(int photoID);
     }
 }

@@ -14,7 +14,7 @@ namespace WebUI.Models
     public class RegistrationModel
     {
 
-       // [HiddenInput(DisplayValue = false)]
+        [HiddenInput(DisplayValue = false)]
         public int UserID { get; set; }
         [Required(ErrorMessage = "Please enter a  name")]
         public string Name { get; set; }

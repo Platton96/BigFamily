@@ -21,6 +21,7 @@ namespace WebUI.Controllers
 
         public ViewResult Albums(int userId)
         {
+            ViewBag.UserID = userId;
 
             PhotoModelView photosUser = new PhotoModelView
             {
@@ -32,7 +33,41 @@ namespace WebUI.Controllers
                    
              
             return View(photosUser);
-               
+        }
+        public ViewResult AddNewPhoto(int userId)
+        {
+            return View(new Photo());
+        }
+        [HttpPost]
+        public ActionResult AddNewPhoto(Photo photoUser, HttpPostedFileBase image)
+        {
+            if (ModelState.IsValid)
+            {
+                if (image != null)
+                {
+                    photoUser.ImageMimeType = image.ContentType;
+                    photoUser.ImageData = new byte[image.ContentLength];
+                    image.InputStream.Read(photoUser.ImageData, 0, image.ContentLength);
+                }
+                repository.SavePhoto(photoUser);
+                return RedirectToAction("Albums", new { userId=photoUser.UserID });
+            }
+            else
+            {
+                return View(photoUser);
+            }
+        }
+        public FileContentResult GetPhoto(int photoId)
+        {
+            Photo photo = repository.Photos.FirstOrDefault(ph => ph.PhotoID == photoId);
+            if (photo!=null)
+            {
+                return File(photo.ImageData, photo.ImageMimeType);
+            }
+            else
+            {
+                return null;
+            }
         }
     }
 }

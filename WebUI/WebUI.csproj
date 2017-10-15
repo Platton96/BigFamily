@@ -207,6 +207,7 @@
     <Content Include="Views\User\Registration.cshtml" />
     <Content Include="Views\Photo\Shared\_PhotoSummary.cshtml" />
     <Content Include="Views\Photo\Albums.cshtml" />
+    <Content Include="Views\Photo\AddNewPhoto.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

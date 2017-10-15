@@ -9,3 +9,6 @@
 {
     @ph.Name;
 }
+
+@*@Html.ActionLink("new", "AddNewPhoto", "Photo", new {userId=ViewBag.UserID })*@
+<a href="AddNewPhoto?userId=@ViewBag.UserID">new</a>
