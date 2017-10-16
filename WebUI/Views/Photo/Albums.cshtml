@@ -1,14 +1,44 @@
 ﻿@model WebUI.Models.PhotoModelView
 
 @{
+
     ViewBag.Title = "Albums";
+    Layout = "~/Views/Shared/_LayoutForPhoto.cshtml";
 }
 
-<h2>Albums</h2>
-@foreach(var ph in Model.Photos)
-{
-    @ph.Name;
-}
 
-@*@Html.ActionLink("new", "AddNewPhoto", "Photo", new {userId=ViewBag.UserID })*@
-<a href="AddNewPhoto?userId=@ViewBag.UserID">new</a>
+
+
+<div class="container">
+    <a href="AddNewPhoto?userId=@ViewBag.UserID">new</a>
+    <div class="clearfix mosaicflow">
+        @foreach (var ph in Model.Photos)
+        {
+            @*<div class="mosaicflow__item">
+                <a class="fancyimage" rel="group" href="@Url.Action("GetPhoto", "Photo", new { ph.PhotoID})">
+                    <img src="@Url.Action("GetPhoto", "Photo", new { ph.PhotoID})" />
+                </a>
+            </div>*@
+            @*<div class="mosaicflow__item">
+                    <a class="fancyimage" rel="group" href="~/Img/sampleuser@gmail.com.png">
+                        <img src="~/Img/sampleuser@gmail.com.png" />
+                    </a>
+                </div>*@
+              <div class="mosaicflow__item">
+                        @Html.Raw("<a class=\"fancyimage\" rel=\"group\" href=\"data:image/jpeg;base64,"
+                                + Convert.ToBase64String(ph.ImageData) + "\" >")
+                        @Html.Raw("<img src=\"data:image/jpeg;base64,"
+                                + Convert.ToBase64String(ph.ImageData) + "\" />")
+                                @Html.Raw("</a>")
+                    
+                </div>
+
+        }
+        </div>
+    </div>
+
+
+
+
+        @*@Html.ActionLink("new", "AddNewPhoto", "Photo", new {userId=ViewBag.UserID })*@
+

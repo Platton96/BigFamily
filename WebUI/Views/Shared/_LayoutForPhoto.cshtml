@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>BigFamily</title>
+    <!-- Bootstrap -->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet">
+
+    <link href="~/Content/font-awesome.css" rel="stylesheet">
+    <link href="~/Content/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/Content/jquery.fancybox.css" type="text/css" media="screen" />
+    <script src="~/scripts/jquery.fancybox.js"></script>
+    <script src="~/Scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.fancybox.pack.js"></script>
+    <script src="~/Scripts/jquery.fancybox-thumbs.js" type="text/javascript"></script>
+    <script src="~/Scripts/jquery.fancybox-media.js" type="text/javascript"></script>
+    <script src="~/Scripts/jquery.fancybox-thumbs.js" type="text/javascript"></script>
+    <script src="~/Scripts/jquery.fancybox-buttons.js" type="text/javascript"></script>
+    <script src="~/Scripts/jquery.mosaicflow.min.js" type="text/javascript"></script>
+    <script src="~/Scripts/bootstrap.min.js" type="text/javascript"></script>
+   
+ 
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+    <![endif]-->
+
+    <style>
+        .mosaicflow__item {
+            padding: 3px;
+        }
+
+        .mosaicflow__column {
+            float: left;
+        }
+
+        .mosaicflow__item img {
+            display: block;
+            width: 100%;
+            height: auto;
+            padding: 4px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+            .mosaicflow__item img:hover {
+                opacity: 0.6;
+                filter: alpha(opacity=60);
+            }
+    </style>
+
+
+</head>
+
+<body>
+
+    <!--Навигационное панель-->
+    <div class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
+                <div class="navbar-header"> <a class="navbar-brand" href="#">BigFamily</a> </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">о нас</a></li>
+                </ul>
+            </div>
+        </div>
+    <!--Навигационное панель-->
+            @RenderBody()
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("a.fancyimage").fancybox();
+        });
+    </script>
+   
+    @*<script src="~/scripts/jquery.fancybox.js"></script>
+    <script src="~/Scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.fancybox.pack.js"></script>
+    <script src="~/Scripts/jquery.fancybox-thumbs.js" type="text/javascript"></script>
+    <script src="~/Scripts/jquery.fancybox-media.js" type="text/javascript"></script>
+    <script src="~/Scripts/jquery.fancybox-thumbs.js" type="text/javascript"></script>
+    <script src="~/Scripts/jquery.fancybox-buttons.js" type="text/javascript"></script>
+    <script src="~/Scripts/jquery.mosaicflow.min.js" type="text/javascript"></script>
+    <script src="~/Scripts/bootstrap.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("a.fancyimage").fancybox();
+        });
+    </script>*@
+
+
+</body>
+
+</html>
