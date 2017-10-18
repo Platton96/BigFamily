@@ -9,5 +9,6 @@ namespace WebUI.Models
     public class PhotoModelView
     {
         public IEnumerable<Photo> Photos { get; set; }
+        public string CurrentAlbum { get; set; }
     }
 }

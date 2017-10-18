@@ -19,17 +19,20 @@ namespace WebUI.Controllers
         //
         // GET: /Photo/
 
-        public ViewResult Albums(int userId)
+        public ViewResult Albums(int userId, string album)
         {
-            ViewBag.UserID = userId;
+            
 
             PhotoModelView photosUser = new PhotoModelView
             {
                 Photos = repository.Photos
-                .Where(p => p.UserID == userId)
-                .OrderBy(p => p.Name)
+                .Where(p => p.UserID == userId&&(album==null||p.Albom==album))
+                .OrderBy(p => p.Name),
+                CurrentAlbum=album
 
             };
+
+            ViewBag.UserId = userId;
                    
              
             return View(photosUser);

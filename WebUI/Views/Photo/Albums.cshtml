@@ -10,7 +10,8 @@
 
 
 <div class="container">
-    <a href="AddNewPhoto?userId=@ViewBag.UserID">new</a>
+   
+    @{Html.RenderAction("Menu", "Nav", new { userId=ViewBag.UserId });}
     <div class="clearfix mosaicflow">
         @foreach (var ph in Model.Photos)
         {
@@ -25,8 +26,8 @@
                     </a>
                 </div>*@
               <div class="mosaicflow__item">
-                        @Html.Raw("<a class=\"fancyimage\" rel=\"group\" href=\"data:image/jpeg;base64,"
-                                + Convert.ToBase64String(ph.ImageData) + "\" >")
+                        @Html.Raw("<a class=\"fancyimage \" rel=\"group\"  href=\"data:image/jpeg;base64,"
+                                + Convert.ToBase64String(ph.ImageData) + "\" title=\""+ph.Name+"\"/>")
                         @Html.Raw("<img src=\"data:image/jpeg;base64,"
                                 + Convert.ToBase64String(ph.ImageData) + "\" />")
                                 @Html.Raw("</a>")
@@ -39,6 +40,4 @@
 
 
 
-
-        @*@Html.ActionLink("new", "AddNewPhoto", "Photo", new {userId=ViewBag.UserID })*@
 

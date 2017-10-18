@@ -1,0 +1,37 @@
+﻿@model IEnumerable<string>
+@*@Html.ActionLink("Все", "Albums", "Photo", new { userId=ViewBag.UserId })*@
+
+<div class="container">
+    <div class="row">
+        <div class="container">
+            <ul class="nav nav-pills">
+                <li><a href="AddNewPhoto?userId=@ViewBag.UserID">Добавить фото</a></li>
+                <li >
+                    <a  href="Albums?userId=@ViewBag.UserId">Все фото</a>
+                </li>
+                    @foreach (var link in Model)
+                    {
+                        string activeAlbum;
+                        
+                       @*<li> <a href="Albums?userId=@ViewBag.UserId&album=@link">@link</a></li>*@
+                        if(link==ViewBag.SelectedAlbum)
+                        {
+                            activeAlbum = "active";
+                        }
+                        else 
+                        {
+                            activeAlbum = null;
+                        }
+                         <li class="@activeAlbum"> @Html.RouteLink(link, new {
+                          controller = "Photo",
+                          action = "Albums",
+                          userId=ViewBag.UserId,
+                          album = link})
+                          </li>
+                          
+                        
+                    }
+             </ul>
+        </div>
+    </div>
+</div>
