@@ -12,7 +12,9 @@
     <link href="~/Content/font-awesome.css" rel="stylesheet">
     <link href="~/Content/style.css" rel="stylesheet">
     <script src="~/Scripts/jquery-1.9.1.min.js"></script>
-    <script src="~/Scripts/validate"></script>
+    <script src="~/scripts/bootstrap.js"></script>
+    <script src="~/scripts/jquery.validate.js"></script>
+    
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -22,17 +24,41 @@
 </head>
 
 <body>
-
-    <!--Навигационное панель-->
+    <!--Модальное окно должно быть в body-->
+    <div class="modal fade" id="modal-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" type="button" data-dismiss="modal">
+                        <i class="fa fa-close"></i>
+                    </button>
+                    <h4 class="modal-title">О нас</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Даный сервис позволяет создвать альбомы с фотографиями пользователя</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" type="button" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/Модальное окно должно быть в body-->
     <div class="navbar navbar-inverse navbar-static-top">
         <div class="container">
-            <div class="navbar-header"> <a class="navbar-brand" href="#">BigFamily</a> </div>
+            <div class="navbar-header "> @Html.RouteLink("BigFamily", new
+           {
+               controller = "User",
+               action = "MainPage",
+               userId = Model.UserID
+           }, new { @class = "navbar-brand" }) </div>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">О нас</a></li>
+                <li><a data-toggle="modal" data-target="#modal-1">О нас</a></li>
             </ul>
         </div>
     </div>
     <!--Навигационное панель-->
+
     <div>
         @if (TempData["message"] != null)
         {
@@ -49,7 +75,7 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.js"></script>
+    
 </body>
 
 </html>

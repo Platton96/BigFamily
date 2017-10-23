@@ -16,6 +16,12 @@ namespace WebUI.Controllers
         {
             repository = repo;
         }
+        public ViewResult MainPage(int userId)
+        {
+            User user = repository.Users
+                .FirstOrDefault(p => p.UserID == userId);
+            return View(user);
+        }
         public ViewResult Login()
         {
             return View(new User());
@@ -86,6 +92,10 @@ namespace WebUI.Controllers
 
             }
 
+        }
+        public ActionResult About()
+        {
+            return PartialView();
         }
         public FileContentResult GetImage(int userId)
         {

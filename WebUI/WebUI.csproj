@@ -138,6 +138,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\NavController.cs" />
     <Compile Include="Controllers\PhotoController.cs" />
+    <Compile Include="Controllers\SliderController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -216,18 +217,17 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Views\Web.config" />
-    <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Shared\_Nav.cshtml" />
     <Content Include="Views\User\Login.cshtml" />
     <Content Include="Views\User\MainPage.cshtml" />
     <Content Include="Views\User\Registration.cshtml" />
-    <Content Include="Views\Photo\Shared\_PhotoSummary.cshtml" />
+    <Content Include="Views\Photo\Shared\PhotoSummary.cshtml" />
     <Content Include="Views\Photo\Albums.cshtml" />
     <Content Include="Views\Photo\AddNewPhoto.cshtml" />
     <Content Include="Views\Shared\_LayoutForPhoto.cshtml" />
     <Content Include="Views\Nav\Menu.cshtml" />
+    <Content Include="Views\Slider\SliderOfPhoto.cshtml" />
+    <Content Include="Views\Shared\ModalWindow.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

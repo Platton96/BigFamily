@@ -1,0 +1,10 @@
+﻿@model Domain.Entities.Photo
+
+<div class="mosaicflow__item">
+    @Html.Raw("<a class=\"fancyimage \" rel=\"group\"  href=\"data:image/jpeg;base64,"
+                                + Convert.ToBase64String(Model.ImageData) + "\" title=\"" + Model.Name + "\"/>")
+    @Html.Raw("<img src=\"data:image/jpeg;base64,"
+                                + Convert.ToBase64String(Model.ImageData) + "\" />")
+    @Html.Raw("</a>")
+
+</div>

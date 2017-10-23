@@ -17,8 +17,6 @@ namespace Domain.Entities
         public string Name { get; set; }
         [Required(ErrorMessage = "Please enter a  albom")]
         public string Albom { get; set; }
-
-        [Required(ErrorMessage = "Please enter a  description")]
         public string Description { get; set; }
         public byte[] ImageData { get; set; }
         [HiddenInput(DisplayValue = false)]

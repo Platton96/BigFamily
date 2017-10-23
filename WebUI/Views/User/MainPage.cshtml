@@ -8,34 +8,53 @@
     <figure class="sign">
         <p>
             @if (Model.ImageData != null)
-{
-    <img class="img-responsive" src="@Url.Action("GetImage", "User", new { Model.UserID})" />
-}
-else
-{
-                <img src="~/Img/sampleuser@gmail.com.png" alt="Фото по умалчение"/>
+            {
+                <img class="img-responsive" src="@Url.Action("GetImage", "User", new { Model.UserID})" />
+            }
+            else
+            {
+                <img class="img-responsive" src="~/Img/sampleuser@gmail.com.png" alt="Фото по умалчение" />
             }
         </p>
         <figcaption id="avatarName">@Model.Name  @Model.Surname</figcaption>
     </figure>
+
     <div class="menu">
         <div class="form-group">
+
            @*<a href="Photo/Albums?userId=@Model.UserID">photo</a>*@
-                @Html.RouteLink("photo", new
+         
+            @*@Html.ActionLink("photo", "Albums", "Photo", new {userId=Model.UserID})*@
+            @*<button class="btn btn-success btn-block" type="button"> Мои друзья </button>*@
+
+            Меню
+            @Html.RouteLink("Просмореть фото", new
            {
                controller = "Photo",
                action = "Albums",
                userId = Model.UserID
-           })
-            @*@Html.ActionLink("photo", "Albums", "Photo", new {userId=Model.UserID})*@
-            <button class="btn btn-success btn-block" type="button"> Мои друзья </button>
-            <button class="btn btn-success btn-block" type="button"> Настройки </button>
-            <button class="btn btn-success btn-block" type="button"><i class="fa fa-sign-out"></i> Выйти </button>
+
+           },
+                    new { @class = "btn btn-success btn-block" })
+            @Html.RouteLink("Добавить новае фото", new
+           {
+               controller = "Photo",
+               action = "AddNewPhoto",
+               userId = Model.UserID
+
+           },
+                    new { @class = "btn btn-success btn-block" })
+            @Html.RouteLink("Выйти", new
+           {
+               controller = "User",
+               action = "Login"
+
+           },
+                    new { @class = "btn btn-success btn-block" })
+
         </div>
     </div>
 </div>  
 <div class="col-md-9 col-lg-9 col-sm-9">
-    <h2>MainPage</h2>
-    @Model.UserID
-    @Html.DisplayForModel()
+   @{Html.RenderAction("SliderOfPhoto", "Slider", new { userId = Model.UserID });}
 </div>

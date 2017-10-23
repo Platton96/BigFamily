@@ -74,6 +74,10 @@
     <Compile Include="Migrations\201709292016243_ChangeTypeUserId.Designer.cs">
       <DependentUpon>201709292016243_ChangeTypeUserId.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710211650378_delte atribute for discripton photo.cs" />
+    <Compile Include="Migrations\201710211650378_delte atribute for discripton photo.Designer.cs">
+      <DependentUpon>201710211650378_delte atribute for discripton photo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -96,6 +100,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201709292016243_ChangeTypeUserId.resx">
       <DependentUpon>201709292016243_ChangeTypeUserId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710211650378_delte atribute for discripton photo.resx">
+      <DependentUpon>201710211650378_delte atribute for discripton photo.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

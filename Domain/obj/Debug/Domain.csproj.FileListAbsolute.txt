@@ -26,3 +26,4 @@ C:\Users\Сергей\Documents\GitHub\BigFamily\Domain\obj\Debug\Domain.dll
 C:\Users\Сергей\Documents\GitHub\BigFamily\Domain\obj\Debug\Domain.pdb
 C:\Users\Сергей\Documents\GitHub\BigFamily\Domain\obj\Debug\Domain.Migrations.AddPhotoandnewdatabase.resources
 C:\Users\Сергей\Documents\GitHub\BigFamily\Domain\obj\Debug\Domain.Migrations.ChangeTypeUserId.resources
+C:\Users\Сергей\Documents\GitHub\BigFamily\Domain\obj\Debug\Domain.Migrations.delteatributefordiscriptonphoto.resources

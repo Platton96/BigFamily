@@ -23,6 +23,8 @@
     <script src="~/Scripts/jquery.fancybox-buttons.js" type="text/javascript"></script>
     <script src="~/Scripts/jquery.mosaicflow.min.js" type="text/javascript"></script>
     <script src="~/Scripts/bootstrap.min.js" type="text/javascript"></script>
+
+
    
  
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -62,13 +64,37 @@
 </head>
 
 <body>
-
+    <!--Модальное окно должно быть в body-->
+    <div class="modal fade" id="modal-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" type="button" data-dismiss="modal">
+                        <i class="fa fa-close"></i>
+                    </button>
+                    <h4 class="modal-title">О нас</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Даный сервис позволяет создвать альбомы с фотографиями пользователя</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" type="button" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/Модальное окно должно быть в body-->
     <!--Навигационное панель-->
     <div class="navbar navbar-inverse navbar-static-top">
             <div class="container">
-                <div class="navbar-header"> <a class="navbar-brand" href="#">BigFamily</a> </div>
+                <div class="navbar-header ">@Html.RouteLink("BigFamily", new
+           {   controller = "User",
+               action = "MainPage",
+               userId = ViewBag.UserId
+           }, new { @class = "navbar-brand" })</div>
+                
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">о нас</a></li>
+                    <li><a data-toggle="modal" data-target="#modal-1">О нас</a></li>
                 </ul>
             </div>
         </div>

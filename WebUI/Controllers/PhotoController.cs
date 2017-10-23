@@ -60,6 +60,7 @@ namespace WebUI.Controllers
                 return View(photoUser);
             }
         }
+
         public FileContentResult GetPhoto(int photoId)
         {
             Photo photo = repository.Photos.FirstOrDefault(ph => ph.PhotoID == photoId);
