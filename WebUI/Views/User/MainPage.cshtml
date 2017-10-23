@@ -27,7 +27,7 @@
             @*@Html.ActionLink("photo", "Albums", "Photo", new {userId=Model.UserID})*@
             @*<button class="btn btn-success btn-block" type="button"> Мои друзья </button>*@
 
-            Меню
+            Меню:
             @Html.RouteLink("Просмореть фото", new
            {
                controller = "Photo",
@@ -36,7 +36,7 @@
 
            },
                     new { @class = "btn btn-success btn-block" })
-            @Html.RouteLink("Добавить новае фото", new
+            @Html.RouteLink("Добавить новое фото", new
            {
                controller = "Photo",
                action = "AddNewPhoto",

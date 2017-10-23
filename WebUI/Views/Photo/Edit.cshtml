@@ -1,12 +1,14 @@
 ﻿@model Domain.Entities.Photo
 
 @{
-    ViewBag.Title = "AddNewPhoto";
+    ViewBag.Title = "Edit Photo";
+    Layout = "~/Views/Shared/_Nav.cshtml";
+    
 }
 
-<center><h2>Добавление фото</h2></center>
+<center><h2>Работа с фотом</h2></center>
 <div class="form-horizontal">
-    @using (Html.BeginForm("AddNewPhoto", "Photo",
+    @using (Html.BeginForm("Edit", "Photo",
     FormMethod.Post, new { enctype = "multipart/form-data" }))
     {
         @Html.ValidationSummary()

@@ -223,7 +223,7 @@
     <Content Include="Views\User\Registration.cshtml" />
     <Content Include="Views\Photo\Shared\PhotoSummary.cshtml" />
     <Content Include="Views\Photo\Albums.cshtml" />
-    <Content Include="Views\Photo\AddNewPhoto.cshtml" />
+    <Content Include="Views\Photo\Edit.cshtml" />
     <Content Include="Views\Shared\_LayoutForPhoto.cshtml" />
     <Content Include="Views\Nav\Menu.cshtml" />
     <Content Include="Views\Slider\SliderOfPhoto.cshtml" />

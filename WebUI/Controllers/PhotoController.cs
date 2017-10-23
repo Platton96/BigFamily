@@ -37,12 +37,19 @@ namespace WebUI.Controllers
              
             return View(photosUser);
         }
+        
         public ViewResult AddNewPhoto(int userId)
         {
-            return View(new Photo());
+            return View("Edit",new Photo());
+        }
+        public ViewResult EditPhoto(int photoId)
+        {
+            Photo photoForEdit = repository.Photos
+                .FirstOrDefault(ph => ph.PhotoID == photoId);
+            return View(photoForEdit);
         }
         [HttpPost]
-        public ActionResult AddNewPhoto(Photo photoUser, HttpPostedFileBase image)
+        public ActionResult Edit(Photo photoUser, HttpPostedFileBase image)
         {
             if (ModelState.IsValid)
             {
@@ -60,7 +67,15 @@ namespace WebUI.Controllers
                 return View(photoUser);
             }
         }
-
+        public ActionResult Delete(int photoId)
+        {
+            Photo deletePhoto = repository.DeletePhoto(photoId);
+            if(deletePhoto!=null)
+            {
+                TempData["messageForPhoto"] = string.Format("{0} была удалена", deletePhoto.Name);
+            }
+            return RedirectToAction("Albums", new { userId = deletePhoto.UserID });
+        }
         public FileContentResult GetPhoto(int photoId)
         {
             Photo photo = repository.Photos.FirstOrDefault(ph => ph.PhotoID == photoId);
