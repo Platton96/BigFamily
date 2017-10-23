@@ -184,6 +184,7 @@
     <Content Include="fonts\fontawesome-webfont.eot" />
     <Content Include="fonts\FontAwesome.otf" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Img\default.png" />
     <Content Include="Img\sampleuser%40gmail.com.png" />
     <Content Include="Img\semya.jpg" />
     <Content Include="Scripts\bootstrap.js" />

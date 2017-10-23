@@ -22,10 +22,17 @@
         @{string activeFurstItem = "active";}
         @foreach (var item in Model.Photos)
         {
-                        
+                       
                        <div class="item @activeFurstItem">
+                           @if(item.ImageData!=null)
+                           { 
                            @Html.Raw("<img class=\"img-responsive\" src=\"data:image/jpeg;base64,"
                                         + Convert.ToBase64String(item.ImageData) + "\" />")
+                           }
+                           else
+                           {
+                           <img class="img-responsive" src="~/Img/default.png" />
+                           }
                            <div class="carousel-caption">
                                <h3>@item.Name</h3>
                                <p>@item.Description</p>

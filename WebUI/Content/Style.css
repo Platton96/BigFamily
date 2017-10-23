@@ -23,3 +23,5 @@ img[alt="Фото по умалчение"]
 {
     align-self: center;
 }
+.editor-field { margin-bottom: .8em; }
+.editor-label { font-weight: bold; }

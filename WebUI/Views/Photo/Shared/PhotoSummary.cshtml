@@ -1,11 +1,31 @@
 ﻿@model Domain.Entities.Photo
 
 <div class="mosaicflow__item">
+@if (Model.ImageData != null)
+{
+
     @Html.Raw("<a class=\"fancyimage \" rel=\"group\"  href=\"data:image/jpeg;base64,"
                                 + Convert.ToBase64String(Model.ImageData) + "\" title=\"" + Model.Name + "\"/>")
     @Html.Raw("<img src=\"data:image/jpeg;base64,"
                                 + Convert.ToBase64String(Model.ImageData) + "\" />")
     @Html.Raw("</a>")
-    <a href="#">delete</a>
+}
+else
+ {
+    <a class="fancyimage" rel="group" href="~/Img/default.png" title="@Model.Name">
+        <img src="~/Img/default.png" />
+    </a>
+       }
+        <div class="btn-group pull-left">
+            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                Действия над фото
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="Delete?photoId=@Model.PhotoID">Удалить фото</a></li>
+                <li><a href="Edit?photoId=@Model.PhotoID">Редактировать фото</a></li>
+
+            </ul>
+        </div>
 
 </div>

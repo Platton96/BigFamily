@@ -42,7 +42,7 @@ namespace WebUI.Controllers
         {
             return View("Edit",new Photo());
         }
-        public ViewResult EditPhoto(int photoId)
+        public ViewResult Edit(int photoId)
         {
             Photo photoForEdit = repository.Photos
                 .FirstOrDefault(ph => ph.PhotoID == photoId);
